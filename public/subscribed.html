@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Subscription Success</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="client.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="subscription-name-container">
+          <div class="subscription-name">Digma Pro</div>
+          <div>Subscription successfully created.</div>
+        </div>
+        <div class="cancel">
+          <form action="/cancel-subscription" method="POST" class="cancel-form">
+            <!-- <p>Test cancel flow with updated NFT metadata:</p> -->
+            <input type="hidden" id="session-id" name="session_id" value="" />
+            <button class="cancel-button" type="submit">Cancel Subscription</button>
+          </form>
+        </div>
+      </div>
+      <div class="subscribed">
+        <div class="levels-container">
+          <h2>How it works</h2>
+          <h3>Earn Points</h3>
+          <ul class="points">
+            <li><b>Stamina:</b>1-10 points based on subscription duration.</li>
+            <li><b>Creator:</b>1-10 points awarded for creating projects.</li>
+            <li><b>Collaborator:</b>1-10 points awarded for joining projects as a collaborator.</li>
+            <li><b>Advisor:</b>1-10 points awarded for commenting on projects.</li>
+            <li><b>Builder:</b>1-10 points awarded for building and sharing plugins with the community.</li>
+            <li><b>Evangelist:</b>1-10 points awarded for successfully inviting new members.</li>
+          </ul>
+          <h3>Levels</h3>
+          <ul>
+            <li>
+              <h4>Level 1</h4>
+              <p>1-10 points</p>
+            </li>
+            <li>
+              <h4>Level 2</h4>
+              <p>11-20 points</p>
+            </li>
+            <li>
+              <h4>Level 3</h4>
+              <p>21-30 points</p>
+            </li>
+            <li>
+              <h4>Level 4</h4>
+              <p>31-40 points</p>
+            </li>
+            <li>
+              <h4>Level 5</h4>
+              <p>41-50 points</p>
+            </li>
+            <li>
+              <h4>Level 6</h4>
+              <p>51-60 points</p>
+            </li>
+        </div>
+        <div class="card-container">
+          <img id="image_url" class="nft-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="cover">
+          <ul class="traits">
+            <li>
+              <h4>start date</h4>
+              <p id="start_date">...</p>
+            </li>
+            <li>
+              <h4>tier</h4>
+              <p id="tier">...</p>
+            </li>
+            <li>
+              <h4>status</h4>
+              <p id="status">...</p>
+            </li>
+            <li>
+              <h4>level</h4>
+              <p id="level">...</p>
+            </li>
+            <li>
+              <h4>stamina</h4>
+              <p id="stamina">...</p>
+            </li>
+            <li>
+              <h4>creator</h4>
+              <p id="creator">...</p>
+            </li>
+            <li>
+              <h4>collaborator</h4>
+              <p id="collaborator">...</p>
+            </li>
+            <li>
+              <h4>advisor</h4>
+              <p id="advisor">...</p>
+            </li>
+            <li>
+              <h4>builder</h4>
+              <p id="builder">...</p>
+            </li>
+            <li>
+              <h4>evangelist</h4>
+              <p id="evangelist">...</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

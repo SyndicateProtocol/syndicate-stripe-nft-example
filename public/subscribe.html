@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Digma subscription</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="subscription">
+        <h3>Digma Pro</h3>
+        <h1>your canvas is the future, your tools are creativity and technology</h1>
+        <p>Subscribe to get access to pro features</p>
+        <div class="price">$10.00 <span>/ month</span></div>
+      </div>
+      <form action="/create-checkout-session" method="POST">
+        <input name="walletAddress" placeholder="Enter wallet address: e.g. 0x..." />
+        <!-- You can add additional hidden fields as needed -->
+        <input type="hidden" name="lookup_key" value="enter_lookup_key" />
+        <button id="checkout-and-portal-button" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </body>
+</html>
